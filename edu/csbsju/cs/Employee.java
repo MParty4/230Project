@@ -35,7 +35,7 @@ public class Employee
 
    public void raiseSalary(double byAbsoluteValue)
    {
-      double raise = salary * byPercentage / 100;
+      double raise = salary * 500 / 100;
       salary += raise;
    }
 	
