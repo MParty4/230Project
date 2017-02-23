@@ -14,7 +14,10 @@ public class Employee
          // GregorianCalendar uses 0 for January
       hireDay = calendar.getTime();
    }
-
+   public String toString()
+   {
+	return "Employee Name: " + getName() +"\n" "Date Hired: " + getHireDay() +"\n" + "Salary:"+ getSalary();
+   }
    public String getName()
    {
       return name;
@@ -35,7 +38,7 @@ public class Employee
       double raise = salary * byPercent / 100;
       salary += raise;
    }
-
+	
    private String name;
    private double salary;
    private Date hireDay;
